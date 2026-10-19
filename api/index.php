@@ -16,5 +16,14 @@ if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
     }
 }
 
+// Set path database SQLite secara dinamis berdasarkan lokasi file ini
+// Ini menghindari hardcode path yang bisa berbeda di tiap environment Vercel
+$dbPath = realpath(__DIR__ . '/../database/database.sqlite');
+if ($dbPath) {
+    $_ENV['DB_DATABASE'] = $dbPath;
+    $_SERVER['DB_DATABASE'] = $dbPath;
+    putenv('DB_DATABASE=' . $dbPath);
+}
+
 // Teruskan request ke entrypoint Laravel public/index.php
 require __DIR__ . '/../public/index.php';
