@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('{{ asset('images/hero_bg.png') }}');">
+<section class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('/images/hero_bg.png');">
     <div class="hero-container">
         <div class="hero-content">
             <span class="hero-badge">
