@@ -1,1 +1,2 @@
-*.sqlite*
+# database.sqlite sengaja tidak di-ignore agar bisa deploy ke Vercel
+# *.sqlite*
