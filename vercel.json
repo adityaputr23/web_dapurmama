@@ -51,6 +51,8 @@
     "CACHE_DRIVER": "array",
     "SESSION_DRIVER": "cookie",
     "LOG_CHANNEL": "stderr",
-    "DB_CONNECTION": "sqlite"
+    "DB_CONNECTION": "sqlite",
+    "APP_URL": "https://dapurmama-id.vercel.app",
+    "ASSET_URL": "https://dapurmama-id.vercel.app"
   }
 }
